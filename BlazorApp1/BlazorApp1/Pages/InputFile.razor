@@ -1,10 +1,9 @@
 ﻿@page "/inputfile"
 @using BlazorApp1.PageModel
 @inherits InputFileModel
-
-<input type="file" @ref="inputFileElement" @attributes="UnmatchedParameters" />
-
+<h3>Component</h3>
+<input type="file" name="name" value="" id="inputfile"/>
+<button @onclick="Upload">上传</button>
 @code {
-
 
 }

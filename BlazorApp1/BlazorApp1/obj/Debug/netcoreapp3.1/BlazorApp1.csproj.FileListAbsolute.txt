@@ -176,7 +176,6 @@ D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Blazor
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.csproj.CopyComplete
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.dll
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.pdb
-D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\InputFile.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\BlazorApp1.StaticWebAssets.xml
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\Blazor.DynamicJavascriptRuntime.Evaluator.dll
@@ -189,7 +188,6 @@ D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Hello.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
-D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\InputFile.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\Receivedkafka.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\RunScript.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\SendKafka.razor.g.cs
@@ -197,3 +195,5 @@ D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
 D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\InputFile.razor.g.cs
+D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\obj\Debug\netcoreapp3.1\Razor\Pages\InputFile.razor.g.cs

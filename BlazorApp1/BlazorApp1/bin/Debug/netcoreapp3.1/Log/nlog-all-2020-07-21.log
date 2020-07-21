@@ -1,0 +1,2 @@
+2020-07-21 18:14:05.7942 [5] ERROR Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost-Unhandled exception in circuit 'q98k9Kl6juLp6nuu_O0fQ55OtDnXFMmxNGhqGZqZZls'. Value cannot be null. (Parameter 'jsRuntime')
+2020-07-21 18:14:05.9590 [27] ERROR Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher-Failed to invoke hub method 'ConnectCircuit'. Cannot access a disposed object.

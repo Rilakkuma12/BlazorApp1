@@ -2208,3 +2208,399 @@ File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
    at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
 
 
+2020-07-21 16:47:30.3506 Info Message Template Auto Format enabled
+2020-07-21 16:47:30.3796 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 16:47:30.5361 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 16:47:30.5361 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 16:47:30.5361 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 16:47:30.5571 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 16:47:30.5709 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 16:47:30.6464 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 16:47:30.6659 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 16:47:30.6791 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 16:47:30.6791 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 16:47:30.8634 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 16:47:31.0201 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 16:47:32.3314 Info Configuring from an XML element in D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config...
+2020-07-21 16:47:32.3314 Info Message Template Auto Format enabled
+2020-07-21 16:47:32.3791 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 16:47:32.3791 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 16:47:32.3791 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 16:47:32.3975 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 16:47:32.3975 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 16:47:32.4107 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 16:47:32.4107 Info Closing old configuration.
+2020-07-21 16:47:32.4403 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 16:47:32.4403 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 16:47:32.4580 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 16:47:32.4580 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 16:47:32.4734 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 16:47:32.4843 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 16:48:35.1420 Info Message Template Auto Format enabled
+2020-07-21 16:48:35.1687 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 16:48:35.3314 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 16:48:35.3431 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 16:48:35.3431 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 16:48:35.3737 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 16:48:35.3879 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 16:48:35.4810 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 16:48:35.4963 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 16:48:35.5009 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 16:48:35.5009 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 16:48:35.6381 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 16:48:35.6906 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 16:48:37.9020 Info Configuring from an XML element in D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config...
+2020-07-21 16:48:37.9137 Info Message Template Auto Format enabled
+2020-07-21 16:48:37.9137 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 16:48:37.9280 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 16:48:37.9280 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 16:48:37.9402 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 16:48:37.9402 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 16:48:37.9402 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 16:48:37.9540 Info Closing old configuration.
+2020-07-21 16:48:37.9929 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 16:48:38.0017 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 16:48:38.0017 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 16:48:38.0269 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 16:48:38.0975 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 16:48:38.0975 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 17:00:20.3773 Info Message Template Auto Format enabled
+2020-07-21 17:00:20.4105 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 17:00:20.6033 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 17:00:20.6121 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 17:00:20.6121 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 17:00:20.6308 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 17:00:20.7053 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 17:00:20.7907 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 17:00:20.8082 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 17:00:20.8082 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 17:00:20.8194 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 17:00:20.9030 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 17:00:20.9537 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 17:00:22.6059 Info Configuring from an XML element in D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config...
+2020-07-21 17:00:22.6194 Info Message Template Auto Format enabled
+2020-07-21 17:00:22.6391 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 17:00:22.6562 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 17:00:22.6750 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 17:00:22.6750 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 17:00:22.6750 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 17:00:22.6931 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 17:00:22.6931 Info Closing old configuration.
+2020-07-21 17:00:22.7308 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 17:00:22.7363 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 17:00:22.7363 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 17:00:22.7363 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 17:00:22.7517 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 17:00:22.7517 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 18:05:48.4826 Info Message Template Auto Format enabled
+2020-07-21 18:05:48.5772 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 18:05:49.0214 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 18:05:49.0625 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 18:05:49.0892 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 18:05:49.1708 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 18:05:49.2479 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 18:05:49.4460 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 18:05:49.5352 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 18:05:49.5858 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 18:05:49.6379 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 18:05:49.9879 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 18:05:50.6970 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 18:05:52.7873 Info Configuring from an XML element in D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config...
+2020-07-21 18:05:52.8058 Info Message Template Auto Format enabled
+2020-07-21 18:05:52.8228 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 18:05:52.8646 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 18:05:52.8991 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 18:05:52.8991 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 18:05:52.8991 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 18:05:52.9439 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 18:05:52.9517 Info Closing old configuration.
+2020-07-21 18:05:52.9948 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 18:05:52.9948 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 18:05:52.9948 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 18:05:53.0086 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 18:05:53.0487 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 18:05:53.0589 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 18:07:57.0829 Info Message Template Auto Format enabled
+2020-07-21 18:07:57.1078 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 18:07:57.2488 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 18:07:57.2488 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 18:07:57.2488 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 18:07:57.2758 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 18:07:57.3190 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 18:07:57.4216 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 18:07:57.4393 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 18:07:57.4472 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 18:07:57.4472 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 18:07:57.5736 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 18:07:57.6215 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 18:07:59.4384 Info Configuring from an XML element in D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config...
+2020-07-21 18:07:59.4384 Info Message Template Auto Format enabled
+2020-07-21 18:07:59.4547 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 18:07:59.4547 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 18:07:59.4701 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 18:07:59.4701 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 18:07:59.4857 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 18:07:59.5643 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 18:07:59.5722 Info Closing old configuration.
+2020-07-21 18:07:59.6395 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 18:07:59.6395 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 18:07:59.6510 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 18:07:59.6510 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 18:07:59.7075 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 18:07:59.7138 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 18:13:14.0030 Info Message Template Auto Format enabled
+2020-07-21 18:13:14.0254 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 18:13:14.1932 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 18:13:14.2004 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 18:13:14.2004 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 18:13:14.2301 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 18:13:14.2520 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 18:13:14.4355 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 18:13:14.4528 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 18:13:14.4528 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 18:13:14.4697 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 18:13:14.6540 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 18:13:14.7004 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
+2020-07-21 18:13:15.6270 Info Configuring from an XML element in D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config...
+2020-07-21 18:13:15.6571 Info Message Template Auto Format enabled
+2020-07-21 18:13:15.6571 Info Loading assembly: NLog.Web.AspNetCore
+2020-07-21 18:13:15.6571 Info Adding target AsyncTargetWrapper(Name=allfile)
+2020-07-21 18:13:15.6849 Info Adding target AsyncTargetWrapper(Name=dispatcher)
+2020-07-21 18:13:15.6849 Info Adding target AsyncTargetWrapper(Name=alldispatcher)
+2020-07-21 18:13:15.6849 Info Adding target DatabaseTarget(Name=database)
+2020-07-21 18:13:15.7021 Info Adding target ColoredConsoleTarget(Name=logConsole)
+2020-07-21 18:13:15.7021 Info Closing old configuration.
+2020-07-21 18:13:15.7649 Info Validating config: TargetNames=allfile, logConsole, ConfigItems=133, FilePath=D:\python_course\BlazorApp1\BlazorApp1\BlazorApp1\bin\Debug\netcoreapp3.1\nlog.config
+2020-07-21 18:13:15.7649 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: dispatcher
+2020-07-21 18:13:15.7649 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldispatcher
+2020-07-21 18:13:15.7649 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: database
+2020-07-21 18:13:15.7861 Error DatabaseTarget(Name=database): Failed to create ConnectionType from DBProvider=Npgsql.NpgsqlConnection, Npgsql Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+
+
+2020-07-21 18:13:15.7861 Error Database Target[database]: Error initializing target Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Npgsql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Npgsql, Culture=neutral, PublicKeyToken=null'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMarkHandle stackMark, ObjectHandleOnStack assemblyLoadContext, Boolean loadTypeFromPartialName, ObjectHandleOnStack type, ObjectHandleOnStack keepalive)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+   at NLog.Targets.DatabaseTarget.InitializeTarget()
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+
+
