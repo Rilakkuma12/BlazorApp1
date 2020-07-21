@@ -1,0 +1,32 @@
+﻿@page "/singlestep"
+
+
+@using BlazorApp1.PageModel;
+
+@inherits SingleStepModel
+
+
+<h3>SingleStep</h3>
+
+<label for="targetDevice">目标设备：</label>
+<select class="custom-select" id="targetDevice">
+    <option value="value">工位1</option>
+</select>
+<br />
+<label for="targetPOS">目标POS：</label>
+<input type="text" name="" value="" id="targetPOS" />
+<br />
+<label for="sourceDevice">源设备：</label>
+<input type="checkbox" name="" value="" id="sourceDevice" />
+
+
+
+<button>上料</button>
+<button>下料</button>
+<button @onclick="Scan">冰箱扫码</button>
+<button @onclick="KafkaConsume">Kafka消费</button>
+
+@code {
+
+    
+}

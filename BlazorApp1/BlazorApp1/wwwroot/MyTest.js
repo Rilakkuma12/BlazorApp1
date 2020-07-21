@@ -1,0 +1,3 @@
+﻿function Show() {
+    window.alert();
+}

@@ -1,0 +1,15 @@
+﻿
+<div class="panel panel-default">
+    <div class="panel-handing">@Title </div>
+    <div class="panel-body">@ChildContent</div>
+    <button class="btn btn-primary" @OnClick="OnClick"></button>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+}

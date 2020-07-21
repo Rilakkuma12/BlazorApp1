@@ -1,0 +1,29 @@
+﻿@page "/sendkafka"
+
+@using BlazorApp1.PageModel
+
+@inherits SendKafkaModel
+
+<h3>SendKafka</h3>
+<div>
+    <div>
+        <input type="text" name="message" @bind="@message" placeholder="在此处填入需要发送的kafka消息" style="height: 50px;width: 300px;" />
+    </div>
+    <div>
+        <select @bind="topic">
+            @foreach (var topic in topics)
+            {
+                <option value=@topic>@topic</option>
+            }
+
+        </select>
+    </div>
+    <div>
+        <input type="button" name="send" value="发送" @onclick="SendMessage" class="btn-dark" />
+    </div>
+
+</div>
+@code {
+    
+
+}

@@ -1,0 +1,23 @@
+﻿@page "/runscript"
+
+<h3>RunScript</h3>
+<div>
+    <div>
+        <input type="file" name="script_file" @bind="FilePath" />
+    </div>
+    <div>
+        <input type="submit" name="sumit" value="Run" />
+    </div>
+</div>
+    <p>@FilePath</p>
+
+    @code {
+        //1.获取脚本文件路径
+        //2.识别脚本中的函数名和参数
+        //3.执行对应函数
+        //4.输出日志到界面
+
+        private string FilePath;
+
+
+    }

@@ -1,0 +1,68 @@
+﻿@page "/receivekafka"
+
+@using APLActions;
+@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+@using APLKafka.kafka;
+@using BlazorApp1.Data;
+@inject AplQuery aplQuery
+@inject AplScan  aplScan
+@inject KafkaConsumer kafkaConsumer
+@inject ReceiveKafkaService KafkaService
+
+
+<h3>ReceivedKafka</h3>
+
+<button>Kafka消费</button>
+
+@if (kafkaMsgs == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kafkaMsg in kafkaMsgs)
+            {
+                <tr>
+                    <td>@kafkaMsg.Date.ToShortDateString()</td>
+                    <td>@kafkaMsg.Topic</td>
+                    <td>@kafkaMsg.Content</td>
+               
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private ReceiveKafkaModel[] kafkaMsgs;
+    private ConsumeResult<string, string> consumeResult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //kafkaConsumer.ReceiveMessageAsync();
+        kafkaMsgs = await GetKafkaMsg();
+    }
+    
+    public Task<ReceiveKafkaModel[]> GetKafkaMsg()
+    {
+        consumeResult = kafkaConsumer.ReceiveMessageAsync();
+        return Task.FromResult(Enumerable.Range(1, 1000).Select(Index => new ReceiveKafkaModel
+        {
+            Date = DateTime.Now,
+            Topic = consumeResult.Topic,
+            Content = consumeResult.Message.Value
+
+        }).ToArray());
+
+    }
+    }}
