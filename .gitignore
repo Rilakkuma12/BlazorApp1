@@ -1,0 +1,15 @@
+*.log
+*.manifest
+*.testlog
+*.ide-wal
+*.ide-shm
+*.ide
+*.suo
+*.cache
+*.txt
+*.dll
+*.cs
+*.pdb
+BlazorApp1/BlazorApp1/obj/BlazorApp1.csproj.nuget.g.targets
+BlazorApp1/BlazorApp1/obj/BlazorApp1.csproj.nuget.g.props
+BlazorApp1/BlazorApp1/obj/BlazorApp1.csproj.nuget.dgspec.json

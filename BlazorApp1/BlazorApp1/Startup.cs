@@ -12,11 +12,12 @@ using Microsoft.Extensions.Hosting;
 using BlazorApp1.Data;
 using APLActions;
 using Microsoft.Extensions.Logging;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 using BlazorApp1.Data.kafka;
 using APLKafka;
 using APLKafka.kafka;
 using Microsoft.JSInterop;
+using BlazorApp1.Service;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 
 namespace BlazorApp1
 {
@@ -54,7 +55,8 @@ namespace BlazorApp1
             Configuration.GetSection("KafkaSetting").Bind(_kafkaSetting);
             services.AddSingleton<KafkaSetting>(_kafkaSetting);
             //services.AddSingleton<JSRuntime>();
-
+            services.AddScoped<DragDropHelper>();
+            services.AddScoped<JsHelper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

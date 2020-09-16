@@ -18,7 +18,8 @@ namespace BlazorApp1.PageModel
 {
     public class InputFileModel : ComponentBase
     {
-        private IJSRuntime JSRuntime { get; }
+        [Inject()]
+        private IJSRuntime JSRuntime { get; set; }
         [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object> UnmatchedParameters { get; set; }
         //[Parameter] public EventCallback<IFileListEntry[]> OnChange { get; set; }
         [Parameter] public int MaxMessageSize { get; set; } = 20 * 1024; // TODO: Use SignalR default
@@ -31,8 +32,11 @@ namespace BlazorApp1.PageModel
         public async void Upload()
         {
             string result = string.Empty;
-            await Task.Run(() => result = JSRuntime.InvokeAsync<string>("getFileText", "#inputFile").Result);
+            await Task.Run(() => result = JSRuntime.InvokeAsync<string>("getFileText", "#inputfile").Result);
+            foreach (char comm in result)
+            {
 
+            }
         }
 
     }

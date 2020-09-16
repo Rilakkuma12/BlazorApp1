@@ -1,0 +1,107 @@
+﻿@page "/multimove"
+@using PageModel
+@*@using BlazorApp1.Service
+@inject DragDropHelper DragDropHelper*@
+@inherits MultiMovePageModel
+
+<div>
+    <div>
+        <h3>MultiMove</h3>
+    </div>
+    <div>
+        <label>主设备</label>
+        <select style="width:150px">
+            <option value="value">请选择</option>
+        </select>
+    </div>
+    <hr />
+
+    <div class="excute_order" style="width:20%;float:right">
+        @*<div>
+            <label>执行顺序</label>
+            <button>编辑</button>
+        </div>*@
+        @*<div style="border:thin solid;height:504px;">
+            <button>pos1</button>
+            <input type="text" id="pos_order" value="ceshiaaa" />
+        </div>*@
+        <label>上/下料清单</label>
+        <div id="cart" dropzone="move"
+             @ondragenter="@(e => OnContainerDragEnter(e))"
+             ondragover="event.preventDefault();"
+             @ondragleave="@(e => OnContainerDragLeave(e))"
+             @ondrop="@(e => OnContainerDrop(e, Index))"
+             style="@_highlightDropTargetStyle">
+
+            <div class="table" style="border:thin solid;height:auto;">
+                <ol id="products">
+                    <li id="placehoder">添加产品到这里</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="table_edit" style="width:80%">
+        <div>
+            <button>批量编辑</button>
+            <button>编辑</button>
+        </div>
+        <div dropzone="move"
+             @ondragenter="@(e => OnContainerDragEnter(e))"
+             ondragover="event.preventDefault();"
+             @ondragleave="@(e => OnContainerDragLeave(e))"
+             @ondrop="@(e => OnContainerDrop(e, Index))">
+            @for (int j = 1; j < 6; j++)
+            {
+                <div>
+                    @for (int i = 0; i < 8; i++)
+                    {
+                        <div id="pos@(j+5*i)" class="pos"
+                             onmouseover="MouseOver(@(j+5*i))"
+                             onmouseout="MouseOut(@(j+5*i))"
+                             onmousedown="PosClick(@(j+5*i))"
+                             draggable="true"
+                             @ondragstart="@(e => OnItemDragStart(e, "pos"+(j+5*i).ToString()))">
+
+                            <input type="checkbox"
+                                   id="check@(j+5*i)"
+                                   style="cursor:pointer"
+                                   @onchange="@((args) => AttributeChanged((j+5*i).ToString(), args))" />
+
+                            <label for="check@(j+5*i)" style="cursor:pointer">pos@(j + 5 * i)</label>
+                            <div style="font-size:4px">
+                                <div>
+                                    辅助设备：
+                                    <input type="text" name="name" value="" style="width:50px;height:10px;border:0px;background-color:transparent" />
+                                </div>
+                                <div>
+                                    PN ：
+                                    <input type="text" name="name" value="" style="width:50px;height:10px;border:0px;background-color:transparent" />
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="name" value="" /> 封膜
+                                    <input type="checkbox" name="name" value="" /> 撕膜
+                                    <input type="checkbox" name="name" value="" /> 离心
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <hr />
+    <div>
+        <button>上料</button>
+        <button>下料</button>
+    </div>
+
+</div>
+
+
+
+@code {
+
+}

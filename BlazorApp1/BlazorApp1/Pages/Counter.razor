@@ -1,16 +1,77 @@
 ﻿@page "/counter"
+@using PageModel
+@inherits CounterPageModel
 
-<h1>Counter</h1>
+    <div class="placeholder">
+        <h1>Counter</h1>
 
-<p>Current count: @currentCount</p>
+        <p>Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+        <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-@code {
-    private int currentCount = 0;
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+        @*<div class="ctn ctn1">
+            <div class="sub sub1">
+                <div class="dragCtn fixed" style=""
+                        onmousedown=""
+                        onmousemove=""
+                        onmouseup="MouseUp(site)"
+                        >
+                    拖动我
+                </div>
+            </div>
+        </div>*@
+
+        <div id="draggable" class="dropdown-divider" draggable="true" ondrag="Drag(this.id)"
+             style="width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;">
+            <p>请拖动我</p>
+        </div>
+
+        <div id="droppable" class="dropdown-divider" ondrop="Drop(this.id)"
+             style="width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px;">
+            <p>请放置在这里</p>
+        </div>
+        <hr />
+        <div id="products">
+            <h1 class="ui-widget-header">产品</h1>
+            <div id="catalog">
+                <h2><a href="#">T-Shirts</a></h2>
+                <div>
+                    <ul>
+                        <li draggable="true" ondrag="DraggableNew">Lolcat Shirt</li>
+                        <li>Cheezeburger Shirt</li>
+                        <li>Buckit Shirt</li>
+                    </ul>
+                </div>
+                <h2><a href="#">Bags</a></h2>
+                <div>
+                    <ul>
+                        <li>Zebra Striped</li>
+                        <li>Black Leather</li>
+                        <li>Alligator Leather</li>
+                    </ul>
+                </div>
+                <h2><a href="#">Gadgets</a></h2>
+                <div>
+                    <ul>
+                        <li>iPhone</li>
+                        <li>iPod</li>
+                        <li>iPad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h1 class="ui-widget-header">购物车</h1>
+            <div class="ui-widget-content">
+                <ol>
+                    <li class="placeholder">添加产品到这里</li>
+                </ol>
+            </div>
+        </div>
+
+
+
+    </div>
+

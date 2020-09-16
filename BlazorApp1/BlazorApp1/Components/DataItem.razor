@@ -1,0 +1,15 @@
+﻿@inherits ComponentBase
+@using BlazorApp1.Service
+
+    <div class="alert alert-primary mt-4" role="alert">
+        <strong>@Model.Text</strong>
+        <span class="text-nowrap">
+            @Model.Text
+        </span>
+    </div>
+
+
+@code {
+    [Parameter]
+    public DragItem Model { get; set; }
+}

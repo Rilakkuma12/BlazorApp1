@@ -1,0 +1,57 @@
+﻿@using BlazorApp1.Service
+@inject DragDropHelper DragDropHelper
+<div>
+   
+    <div class="col-sm-3 border"
+         dropzone="move"
+         @ondragenter="@(e => OnContainerDragEnter(e))"
+         ondragover="event.preventDefault();"
+         @ondragleave="@(e => OnContainerDragLeave(e))"
+         @ondrop="@(e => OnContainerDrop(e, Index))" 
+         style="@_highlightDropTargetStyle"
+         >
+        @foreach (var item in DragDropHelper.Items.Where(item => item.Index == Index))
+        {
+            <div draggable="true" class="bm-3" @ondragstart="@(e => OnItemDragStart(e, item))">
+                <DataItem Model="@item"/>
+            </div>
+        }
+
+    </div>
+</div>
+
+@code {
+    /// <summary>
+    /// The refresh handler from the parent
+    /// </summary>
+    [Parameter]
+    public Action RefreshHandler { get; set; }
+
+    [Parameter]
+    public int Index { get; set; }
+
+    string _highlightDropTargetStyle = null;
+
+    void OnItemDragStart(DragEventArgs e, DragItem dragItem)
+    {
+        DragDropHelper.Item = dragItem;
+    }
+
+    void OnContainerDragEnter(DragEventArgs e)
+    {
+        _highlightDropTargetStyle = "border:5px dashed salmon !important";
+    }
+
+    void OnContainerDragLeave(DragEventArgs e)
+    {
+        _highlightDropTargetStyle = null;
+    }
+
+    void OnContainerDrop(DragEventArgs e, int newIndex)
+    {
+        _highlightDropTargetStyle = null;
+        DragDropHelper.Item.Index = newIndex;
+        RefreshHandler();
+    }
+
+}
